@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Login Page | Neumorphism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e0e5ec;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+        }
+
+        .neumorphic-card {
+            background: #e0e5ec;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 
+                9px 9px 16px rgb(163,177,198,0.6), 
+                -9px -9px 16px rgba(255,255,255, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .neumorphic-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            background: #e0e5ec;
+            box-shadow: 
+                inset 6px 6px 10px 0 rgba(163,177,198, 0.7), 
+                inset -6px -6px 10px 0 rgba(255,255,255, 0.8);
+            color: #4a5568;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .neumorphic-input::placeholder {
+            color: #a0aec0;
+        }
+
+        .neumorphic-input:focus {
+            box-shadow: 
+                inset 3px 3px 6px 0 rgba(163,177,198, 0.7), 
+                inset -3px -3px 6px 0 rgba(255,255,255, 0.8);
+        }
+
+        .neumorphic-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            background: #e0e5ec;
+            box-shadow: 
+                6px 6px 10px 0 rgba(163,177,198, 0.7), 
+                -6px -6px 10px 0 rgba(255,255,255, 0.8);
+            color: #4a5568;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .neumorphic-button:hover {
+            box-shadow: 
+                4px 4px 8px 0 rgba(163,177,198, 0.7), 
+                -4px -4px 8px 0 rgba(255,255,255, 0.8);
+        }
+
+        .neumorphic-button:active {
+            box-shadow: 
+                inset 4px 4px 8px 0 rgba(163,177,198, 0.7), 
+                inset -4px -4px 8px 0 rgba(255,255,255, 0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .neumorphic-card {
+                padding: 30px 25px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="neumorphic-card">
+            <h2>Login</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" class="neumorphic-input" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="neumorphic-input" placeholder="Password" required>
+                </div>
+                <button type="submit" class="neumorphic-button">Sign In</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
