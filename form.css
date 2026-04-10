@@ -124,6 +124,12 @@
       font-weight: 600;
   }
 
+/* BUTTON HOVER EFFECT USING TRANSFORM Y */
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    }
+
   .container p {
       font-size: 14.5px;
       margin: 15px 0;
